@@ -1,3 +1,4 @@
+#Author :- AslamMiya
 import pyqrcode
 import os, glob
 import sys
