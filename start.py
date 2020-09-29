@@ -6,17 +6,12 @@ import pyqrcode
 import os, sys
 import subprocess as sub
 
-# Create folder
-
 dir_name = ('/sdcard/DCIM/QR codes')
 if not os.path.exists(dir_name):
   try:
     os.mkdir('/sdcard/DCIM/QR codes')
   except FileExistsError:
     pass
-    
-# Folder creating finished
-# Get input
 
 sub.call('clear')
 try:
@@ -27,9 +22,6 @@ try:
 except KeyboardInterrupt:
 	print('\n\033[1;31mProcess cancled by user.\n\033[0m')
 	sys.exit()
-
-# Geting input finished
-# Get text in code
 
 while True:
 	try:
